@@ -51,7 +51,8 @@
             this.çıkışToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1187, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(890, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,7 +65,7 @@
             this.stokTemizleToolStripMenuItem});
             this.stokMenüsüToolStripMenuItem.ForeColor = System.Drawing.Color.Snow;
             this.stokMenüsüToolStripMenuItem.Name = "stokMenüsüToolStripMenuItem";
-            this.stokMenüsüToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
+            this.stokMenüsüToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
             this.stokMenüsüToolStripMenuItem.Text = "Stok Yönetimi";
             this.stokMenüsüToolStripMenuItem.Click += new System.EventHandler(this.stokMenüsüToolStripMenuItem_Click);
             // 
@@ -73,7 +74,7 @@
             this.stokEkleToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(90)))), ((int)(((byte)(116)))));
             this.stokEkleToolStripMenuItem.ForeColor = System.Drawing.Color.Snow;
             this.stokEkleToolStripMenuItem.Name = "stokEkleToolStripMenuItem";
-            this.stokEkleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.stokEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.stokEkleToolStripMenuItem.Text = "Ekle";
             this.stokEkleToolStripMenuItem.Click += new System.EventHandler(this.stokEkleToolStripMenuItem_Click);
             // 
@@ -82,49 +83,51 @@
             this.stokGüncelleToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(90)))), ((int)(((byte)(116)))));
             this.stokGüncelleToolStripMenuItem.ForeColor = System.Drawing.Color.Snow;
             this.stokGüncelleToolStripMenuItem.Name = "stokGüncelleToolStripMenuItem";
-            this.stokGüncelleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.stokGüncelleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.stokGüncelleToolStripMenuItem.Text = "Çıkar";
+            this.stokGüncelleToolStripMenuItem.Click += new System.EventHandler(this.stokGüncelleToolStripMenuItem_Click);
             // 
             // stokTemizleToolStripMenuItem
             // 
             this.stokTemizleToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(90)))), ((int)(((byte)(116)))));
             this.stokTemizleToolStripMenuItem.ForeColor = System.Drawing.Color.Snow;
             this.stokTemizleToolStripMenuItem.Name = "stokTemizleToolStripMenuItem";
-            this.stokTemizleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.stokTemizleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.stokTemizleToolStripMenuItem.Text = "Güncelle";
             // 
             // satışToolStripMenuItem
             // 
             this.satışToolStripMenuItem.ForeColor = System.Drawing.Color.Snow;
             this.satışToolStripMenuItem.Name = "satışToolStripMenuItem";
-            this.satışToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
+            this.satışToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.satışToolStripMenuItem.Text = "Satış";
             // 
             // raporlamaToolStripMenuItem
             // 
             this.raporlamaToolStripMenuItem.ForeColor = System.Drawing.Color.Snow;
             this.raporlamaToolStripMenuItem.Name = "raporlamaToolStripMenuItem";
-            this.raporlamaToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.raporlamaToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.raporlamaToolStripMenuItem.Text = "Raporlama";
             // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.ForeColor = System.Drawing.Color.Snow;
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
             this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(117)))), ((int)(((byte)(114)))));
-            this.ClientSize = new System.Drawing.Size(1187, 569);
+            this.ClientSize = new System.Drawing.Size(890, 462);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
-            this.Text = "Loreca";
+            this.Text = "Giriş Ekranı";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
