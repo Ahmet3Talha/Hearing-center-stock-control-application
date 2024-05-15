@@ -67,7 +67,6 @@
             this.stokMenüsüToolStripMenuItem.Name = "stokMenüsüToolStripMenuItem";
             this.stokMenüsüToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
             this.stokMenüsüToolStripMenuItem.Text = "Stok Yönetimi";
-            this.stokMenüsüToolStripMenuItem.Click += new System.EventHandler(this.stokMenüsüToolStripMenuItem_Click);
             // 
             // stokEkleToolStripMenuItem
             // 
@@ -94,6 +93,7 @@
             this.stokTemizleToolStripMenuItem.Name = "stokTemizleToolStripMenuItem";
             this.stokTemizleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.stokTemizleToolStripMenuItem.Text = "Güncelle";
+            this.stokTemizleToolStripMenuItem.Click += new System.EventHandler(this.stokTemizleToolStripMenuItem_Click);
             // 
             // satışToolStripMenuItem
             // 
@@ -125,7 +125,7 @@
             this.ClientSize = new System.Drawing.Size(890, 462);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Giriş Ekranı";
             this.Load += new System.EventHandler(this.Form1_Load);

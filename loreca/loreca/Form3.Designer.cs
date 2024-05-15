@@ -146,6 +146,7 @@
             this.stokTemizleToolStripMenuItem.Name = "stokTemizleToolStripMenuItem";
             this.stokTemizleToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.stokTemizleToolStripMenuItem.Text = "Güncelle";
+            this.stokTemizleToolStripMenuItem.Click += new System.EventHandler(this.stokTemizleToolStripMenuItem_Click);
             // 
             // satışToolStripMenuItem
             // 

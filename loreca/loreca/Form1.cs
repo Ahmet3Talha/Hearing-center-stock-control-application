@@ -34,11 +34,6 @@ namespace loreca
             form2.ShowDialog();
         }
 
-        private void stokMenüsüToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -49,6 +44,13 @@ namespace loreca
             Form3 form3 = new Form3();
             this.Hide();
             form3.Show();
+        }
+
+        private void stokTemizleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            this.Hide();
+            form4.Show();
         }
     }
 }

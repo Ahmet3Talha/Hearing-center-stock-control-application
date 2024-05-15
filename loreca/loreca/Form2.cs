@@ -354,7 +354,9 @@ namespace loreca
 
         private void stokTemizleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form4 form4 = new Form4();
+            this.Hide();
+            form4.Show();
         }
 
         private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)

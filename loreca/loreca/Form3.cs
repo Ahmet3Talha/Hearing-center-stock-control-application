@@ -141,6 +141,13 @@ namespace loreca
             form2.Show();
         }
 
+        private void stokTemizleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            this.Hide();
+            form4.Show();
+        }
+
         private void musteri_sil()
         {
             try
@@ -183,19 +190,18 @@ namespace loreca
         {
             try
             {
+                string barkod = comboBox2.SelectedValue.ToString();
                 conn.Open();
-                string barkod = comboBox2.SelectedValue.ToString(); // barkod değerini comboBox2'den alın
                 string sql = $"DELETE FROM cihaz WHERE barkod = '{barkod}'";
                 cmd = new NpgsqlCommand(sql, conn);
-                da = new NpgsqlDataAdapter(cmd);
-                dt = new DataTable();
-                da.Fill(dt);
+                cmd.ExecuteNonQuery();
+                conn.Close();
 
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Teslim işlemi yapılırken combobox2'de bir hata oluştu: " + ex.Message);
+                MessageBox.Show("Teslim işleminde bir hata oluştu: " + ex.Message);
             }
 
             finally
@@ -218,5 +224,7 @@ namespace loreca
             render_table();
             musteri_combobox();
         }
+
+
     }
 }
