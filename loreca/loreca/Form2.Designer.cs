@@ -58,7 +58,6 @@
             this.stokEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stokGüncelleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stokTemizleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.satışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.raporlamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.npgsqlCommandBuilder1 = new Npgsql.NpgsqlCommandBuilder();
@@ -329,7 +328,6 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anaEkranToolStripMenuItem,
             this.stokMenüsüToolStripMenuItem,
-            this.satışToolStripMenuItem,
             this.raporlamaToolStripMenuItem,
             this.çıkışToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -385,19 +383,13 @@
             this.stokTemizleToolStripMenuItem.Text = "Güncelle";
             this.stokTemizleToolStripMenuItem.Click += new System.EventHandler(this.stokTemizleToolStripMenuItem_Click);
             // 
-            // satışToolStripMenuItem
-            // 
-            this.satışToolStripMenuItem.ForeColor = System.Drawing.Color.Snow;
-            this.satışToolStripMenuItem.Name = "satışToolStripMenuItem";
-            this.satışToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.satışToolStripMenuItem.Text = "Satış";
-            // 
             // raporlamaToolStripMenuItem
             // 
             this.raporlamaToolStripMenuItem.ForeColor = System.Drawing.Color.Snow;
             this.raporlamaToolStripMenuItem.Name = "raporlamaToolStripMenuItem";
             this.raporlamaToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.raporlamaToolStripMenuItem.Text = "Raporlama";
+            this.raporlamaToolStripMenuItem.Click += new System.EventHandler(this.raporlamaToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem
             // 
@@ -444,10 +436,12 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.RightToLeftLayout = true;
             this.Text = "Ekleme Ekranı";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
@@ -487,7 +481,6 @@
         private System.Windows.Forms.ToolStripMenuItem stokEkleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stokGüncelleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stokTemizleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem satışToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem raporlamaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private Npgsql.NpgsqlCommandBuilder npgsqlCommandBuilder1;

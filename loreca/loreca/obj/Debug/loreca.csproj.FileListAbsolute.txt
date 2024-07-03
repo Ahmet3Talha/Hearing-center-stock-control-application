@@ -44,3 +44,5 @@ C:\Users\06atm\OneDrive\Masaüstü\Projects\loreca masaüstü uygulama\loreca\lo
 C:\Users\06atm\OneDrive\Masaüstü\Projects\loreca masaüstü uygulama\loreca\loreca\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\06atm\OneDrive\Masaüstü\Projects\loreca masaüstü uygulama\loreca\loreca\bin\Debug\System.ValueTuple.xml
 C:\Users\06atm\OneDrive\Masaüstü\Projects\loreca masaüstü uygulama\loreca\loreca\obj\Debug\loreca.csproj.CopyComplete
+C:\Users\06atm\OneDrive\Masaüstü\Projects\loreca masaüstü uygulama\loreca\loreca\obj\Debug\loreca.Form5.resources
+C:\Users\06atm\OneDrive\Masaüstü\Projects\loreca masaüstü uygulama\loreca\loreca\obj\Debug\loreca.Form6.resources

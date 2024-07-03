@@ -45,6 +45,12 @@ namespace loreca
             this.Hide();
             form3.Show();
         }
+        private void raporlamaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            this.Hide();
+            form5.Show();
+        }
 
         private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -225,6 +231,8 @@ namespace loreca
             textBox4.Text = "";
             textBox5.Text = "";
         }
+
+       
     }
 
 }

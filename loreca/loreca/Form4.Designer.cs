@@ -40,7 +40,6 @@
             this.raporlamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -126,7 +126,7 @@
             this.stokEkleToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(90)))), ((int)(((byte)(116)))));
             this.stokEkleToolStripMenuItem.ForeColor = System.Drawing.Color.Snow;
             this.stokEkleToolStripMenuItem.Name = "stokEkleToolStripMenuItem";
-            this.stokEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stokEkleToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.stokEkleToolStripMenuItem.Text = "Ekle";
             this.stokEkleToolStripMenuItem.Click += new System.EventHandler(this.stokEkleToolStripMenuItem_Click);
             // 
@@ -135,7 +135,7 @@
             this.stokGüncelleToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(90)))), ((int)(((byte)(116)))));
             this.stokGüncelleToolStripMenuItem.ForeColor = System.Drawing.Color.Snow;
             this.stokGüncelleToolStripMenuItem.Name = "stokGüncelleToolStripMenuItem";
-            this.stokGüncelleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stokGüncelleToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.stokGüncelleToolStripMenuItem.Text = "Çıkar";
             this.stokGüncelleToolStripMenuItem.Click += new System.EventHandler(this.stokGüncelleToolStripMenuItem_Click);
             // 
@@ -160,6 +160,7 @@
             this.raporlamaToolStripMenuItem.Name = "raporlamaToolStripMenuItem";
             this.raporlamaToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.raporlamaToolStripMenuItem.Text = "Raporlama";
+            this.raporlamaToolStripMenuItem.Click += new System.EventHandler(this.raporlamaToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem
             // 
@@ -179,14 +180,6 @@
             this.label8.Size = new System.Drawing.Size(83, 25);
             this.label8.TabIndex = 57;
             this.label8.Text = "Müşteri";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(632, 24);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(516, 609);
-            this.dataGridView1.TabIndex = 56;
             // 
             // textBox1
             // 
@@ -312,12 +305,21 @@
             this.textBox5.Size = new System.Drawing.Size(131, 20);
             this.textBox5.TabIndex = 76;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(645, 24);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(709, 618);
+            this.dataGridView1.TabIndex = 82;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(117)))), ((int)(((byte)(114)))));
             this.ClientSize = new System.Drawing.Size(1148, 634);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label1);
@@ -335,10 +337,11 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Güncelleme Ekranı";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form4_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -361,7 +364,6 @@
         private System.Windows.Forms.ToolStripMenuItem raporlamaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -375,5 +377,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -147,6 +147,12 @@ namespace loreca
             this.Hide();
             form4.Show();
         }
+        private void raporlamaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            this.Hide();
+            form5.Show();
+        }
 
         private void musteri_sil()
         {
@@ -225,6 +231,6 @@ namespace loreca
             musteri_combobox();
         }
 
-
+        
     }
 }

@@ -161,6 +161,7 @@
             this.raporlamaToolStripMenuItem.Name = "raporlamaToolStripMenuItem";
             this.raporlamaToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.raporlamaToolStripMenuItem.Text = "Raporlama";
+            this.raporlamaToolStripMenuItem.Click += new System.EventHandler(this.raporlamaToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem
             // 
@@ -228,9 +229,11 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form3";
             this.Text = "Silme Ekranı";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
